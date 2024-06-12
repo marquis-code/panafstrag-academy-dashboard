@@ -1,15 +1,15 @@
 <template>
-  <div id="app">
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
 
 <style lang="css">
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  #app {
-    @apply min-h-screen font-sans;
-  }
+#app {
+  @apply min-h-screen font-sans;
+}
 </style>
