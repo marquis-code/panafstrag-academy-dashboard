@@ -2,7 +2,13 @@ import { publicationApiFactory } from "@/apiFactory/publication";
 
 export const useCreatePublication = () => {
   const loading = ref(false);
-  const publicationPayload = ref({})
+  const publicationPayload = ref({
+    programTitle: "",
+    programDescription: "",
+    programRecordingUrl: "",
+    programDate: "",
+    programImageUrl: "",
+  })
 
   const createPublication = async () => {
     loading.value = true;

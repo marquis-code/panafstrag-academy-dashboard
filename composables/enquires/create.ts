@@ -1,4 +1,4 @@
-import { eventApiFactory } from "@/apiFactory/events";
+import { enquiryApiFactory } from "@/apiFactory/enquires";
 
 export const useCreateEvent = () => {
   const loading = ref(false);
@@ -10,12 +10,11 @@ export const useCreateEvent = () => {
     programImageUrl: "",
   });
 
-  const createEvent = async () => {
-    console.log("value");
+  const createEnquiry = async () => {
     loading.value = true;
     try {
       console.log(eventPayload.value, "event payload here");
-      const response = await eventApiFactory.createEvent(eventPayload.value);
+      const response = await enquiryApiFactory.createEnquiry(eventPayload.value);
       if (typeof response === "undefined") {
         return;
       } else {
@@ -44,5 +43,5 @@ export const useCreateEvent = () => {
     );
   });
 
-  return { createEvent, eventPayload, loading, isCreateFormEmpty };
+  return { createEnquiry, eventPayload, loading, isCreateFormEmpty };
 };

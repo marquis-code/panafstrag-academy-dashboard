@@ -1,10 +1,6 @@
 <template>
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm p-6 lg:p-0">
         <form class="space-y-6" @submit.prevent="forgotPassword">
-            <div class="">
-                <h3 class="font-medium text-xl">Forgot password ?</h3>
-                <p class="text-sm">Enter your email below to receive password reset instructions.</p>
-            </div>
             <div>
                 <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email
                     address</label>
@@ -23,7 +19,7 @@
 
         <p class="mt-10 text-center text-sm text-gray-500">
             Already have an account ?
-            <NuxtLink to="/signup" class="font-semibold leading-6 text-white hover:text-indigo-500">Login
+            <NuxtLink to="/signup" class="font-semibold leading-6 text-indigo-500">Login
             </NuxtLink>
         </p>
     </div>

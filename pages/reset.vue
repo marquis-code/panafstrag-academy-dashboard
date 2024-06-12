@@ -1,11 +1,6 @@
 <template>
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm p-6 lg:p-0">
         <form class="space-y-6" @submit.prevent="resetPassword">
-            <div class="">
-                <h3 class="font-medium text-xl">Reset Password</h3>
-                <p class="text-sm">You're a step away from accessing your account.</p>
-            </div>
-
             <div>
                 <div class="flex items-center justify-between">
                     <label for="password" class="block text-sm font-medium leading-6 text-gray-900">New Password</label>
